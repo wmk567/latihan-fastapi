@@ -49,7 +49,7 @@ Input parameter (optional):
     - limit (int)
   
 2. POST /api/members
-Membuat data member baru
+Membuat data member baru <br>
 Body parameter (must be filled):
     - name (string)
     - email (string)
@@ -57,19 +57,23 @@ Body parameter (must be filled):
     - address (string)
   
 3. POST /api/borrowings
-Membuat data borrowing baru
+Membuat data borrowing baru <br>
 Body parameter (must be filled):
     - book_id (string uuid)
     - member_id (string uuid)
 
 4. PUT /api/borrowings/:id/return
-Mengembalikan buku (edit data borrowing)
+Mengembalikan buku (edit data borrowing) <br>
 Input parameter (must be filled):
     - id (string uuid, id data borrowing)
   
 5. GET /api/members/:id/borrowings
-Memperlihatkan sejarah borrowing seorang member
+Memperlihatkan sejarah borrowing seorang member <br>
 Input parameter (must be filled):
     - id (string uuid, id data member)
+Input parameter lain (optional):
+    - status (string)
+    - page (int)
+    - limit (int)
 
 
