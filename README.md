@@ -30,13 +30,14 @@ uvicorn main:app --reload
 
 ### Menggunakan Data Sampel
 Data sampel dapat digunakan setelah program pertama kali dijalankan dan tabel berhasil dibuat program
-1. Mengatur tabel agar dapat menghasilkan UUID dengan
+1. Mengatur tabel agar dapat menghasilkan UUID dengan masuk ke database yang digunakan
+2. Melakukan pengaturan untuk UUID dengan
 ```
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 ALTER TABLE books ALTER COLUMN id SET DEFAULT uuid_generate_v4();
 ALTER TABLE members ALTER COLUMN id SET DEFAULT uuid_generate_v4();
 ```
-2. Menjalankan file SQL untuk melakukan insert data
+3. Menjalankan file SQL untuk melakukan insert data
 
 ### Daftar API yang dibuat
 1. GET /api/books
