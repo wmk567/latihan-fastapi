@@ -71,7 +71,8 @@ Input parameter (must be filled):
 Memperlihatkan sejarah borrowing seorang member <br>
 Input parameter (must be filled):
     - id (string uuid, id data member)
-Input parameter lain (optional):
+
+    Input parameter lain (optional):
     - status (string)
     - page (int)
     - limit (int)
